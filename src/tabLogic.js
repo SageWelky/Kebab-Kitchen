@@ -8,18 +8,19 @@ const content = document.querySelector("#content");
 let navBar = document.querySelector("#nav-bar");
 
 navBar.addEventListener( "click", (event) => {
-  if (event.target.id === "#nav-bar") {
-    return;
-  }
+
   let selectedTab = event.target;
-  content.replaceChildren();
+
   if (selectedTab.textContent === "HOME") {
+    content.replaceChildren();
     loadHome(content);
   }
   if (selectedTab.textContent === "ABOUT") {
+    content.replaceChildren();
     loadAbout(content);
   }
   if (selectedTab.textContent === "MENU") {
+    content.replaceChildren();
     loadMenu(content);
   }
 });
