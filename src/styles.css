@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'CatharsisEspresso';
+  src: url('./assets/CAE_____.TTF') format('TTF');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('./assets/Raleway-VariableFont_wght.ttf') format('TTF');
+  font-weight: 700;
+  font-style: normal;
+}
+
 body, :root, html {
   height: 100%;
   width: 100%;
@@ -5,31 +19,49 @@ body, :root, html {
   overflow-x: hidden;
   box-sizing: border-box;
   margin: 0;
-  font-family: "Mulish","Arial",sans-serif;
   background-color: mistyrose;
 }
 
 nav {
+  box-sizing: border-box;
   height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: end;
-  padding-bottom: 15px;
-  background-color: #262121;
+  padding-bottom: 35px;
 }
 
 nav>div {
   width: 70px;
   text-align: center;
   height: 20px;
-  color: rosybrown;
+  color: #ce9c9c;
+  font-size: 24px;
+  font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
 header {
   height: 200px;
   width: 100%;
+  background-color: #262121;
+}
+
+#logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  gap: 10px;
 }
 
 #logo-text {
-  font-family: Catharsis Espresso, Arial, Helvetica, sans-serif;
+  font-family: 'CatharsisEspresso', Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  color: white;
+}
+
+.logo-icon {
+  height: 50px;
+  width: auto;
 }
