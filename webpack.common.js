@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    "./src/index.js",
+    app: "./src/index.js",
   },
   output: {
     filename: "[name].bundle.js",
@@ -20,11 +20,11 @@ module.exports = {
     rules: [
       {
         test: /\.html$/i,
-        use: ["style-loader", "css-loader"],
+        loader: "html-loader",
       },
       {
         test: /\.css$/i,
-        loader: "html-loader",
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
